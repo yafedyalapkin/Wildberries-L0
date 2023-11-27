@@ -1,0 +1,147 @@
+.inputs {
+  display: flex;
+  padding: 16px 16px 24px 16px;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+
+  height: 420px;
+  margin-top: 12px;
+  margin-left: -16px;
+  margin-right: -16px;
+  width: calc(100% + 32px);
+
+  border-radius: 16px;
+  background: var(--background-white, #FFF);  
+
+  @media#{$screen-tablet} {
+    height: 216px;
+
+    margin-bottom: 50px;
+    margin-top: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    min-width: 640px;
+    padding: 16px 24px 24px 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
+
+    @media#{$screen-tablet} {
+      max-width: 700px;
+    }
+  }
+}
+
+.name-and-surname {
+  @media#{$screen-tablet} {
+    display: flex;
+    gap: 24px;
+  }
+}
+.email-and-phone-and-inn {
+  @media#{$screen-tablet} {
+    display: flex;
+    gap: 24px;
+    margin-top: -20px;
+  }
+  @media#{'(min-width: 1167px)'} {
+    margin-top: -6px;
+  }
+}
+
+
+.input-container {
+  @media#{$screen-tablet} {
+    flex: 1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 11px;
+  }
+
+  &_name {
+    @media#{$screen-tablet} {
+      margin-top: 11px;
+    }
+  }
+  &_email {
+    margin-top: 11px;
+    @media#{$screen-tablet} {
+      margin-top: 25px;
+    }
+    @media#{'(min-width: 1167px)'} {
+      margin-top: 11px;
+    }
+  }
+ 
+
+
+  display: flex;
+  padding: 0px 0px 0px 0px;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+
+
+.label {
+  color: var(--system-gray, #9797AF);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.3s ease;
+
+  &_active {
+    opacity: 1;
+    visibility: visible;
+  };
+}
+
+.input {
+  width: 100%;
+  
+  border-bottom: 1px solid rgba(0,0,0,0.20);
+
+  padding-bottom: 2px;
+
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.input::placeholder {
+  color: var(--system-gray, #9797AF);
+}
+
+
+
+
+
+.error {
+  margin-top: 4px;
+  visibility: hidden;
+
+  color: var(--system-orange, #F55123);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+#errorInn {
+  visibility: visible;
+  color: var(--text-black, #000);
+}

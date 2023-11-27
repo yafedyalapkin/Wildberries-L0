@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 24px 0;
+
+  text-align: center;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  margin-bottom: 56px;
+  @media#{$screen-tablet} {
+    margin-bottom: 0px;
+  }
+}
+

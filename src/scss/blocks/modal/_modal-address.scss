@@ -1,0 +1,123 @@
+.modal {
+
+  &-address {
+    gap: 0;
+
+    @media#{$screen-tablet} {
+      width: 500px;
+      height: fit-content;
+      padding-bottom: 88px;
+    }
+
+    &__pick-up-points {
+      display: none;
+      &_active {
+        display: block;
+      }
+    }
+    &__house {
+      display: none;
+      &_active {
+        display: block;
+      }
+    }
+    
+
+    &__title {
+      margin-top: 2px;
+    }
+    &__mini-title {
+      margin: 25px -2px 16px -2px;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; 
+    }
+
+    &__btns {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+    }
+
+    &__btn {
+      display: flex;
+      height: 40px;
+      min-width: 140px;
+      padding-bottom: 0px;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 0;
+
+      border-radius: 20px;
+      border: 2px solid rgba(203, 17, 171, 0.15);
+      background: var(--light-background-white, #FFF);
+
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; 
+
+      &_active {
+        border: 2px solid var(--light-system-magenta, #CB11AB);
+      }
+    }
+
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-wrap {
+        display: flex;
+      }
+    }
+
+    &__radio-icon {
+      margin-top: 3px;
+    }
+
+    &__radio-text {
+      margin-left: 0;
+      margin-top: -2px;
+      margin-right: 8px;
+    }
+    &__delete {
+      margin-top: 1px;
+      background: url('../icons/delete-gray.svg') no-repeat center / cover; 
+    }
+    &__item {
+      margin-left: 8px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+  &__working-hours {
+    width: 100%;
+    margin-left: 28px;
+  }
+
+
+}
+
+
+.radio__address {
+  flex-direction: column;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-bottom: 22px;
+  align-items: start;
+
+
+}
+
+.delete {
+  display: none;
+}

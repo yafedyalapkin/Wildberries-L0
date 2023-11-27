@@ -1,0 +1,101 @@
+.location_hover {
+  cursor: pointer;
+  &:hover + .tooltip  {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.5s ease, visibility 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  position: absolute;
+
+  width: 280px;
+  height: auto;
+  gap: 8px;
+
+  top: 120%;
+  left: 57%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  color: var(--light-system-text, #000);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+
+  &__name {
+    font-weight: 700;
+  }
+  &_first {
+    left: 50%;
+  }
+}
+
+
+
+.last-price_hover {
+  position: sticky;
+  margin-left: 12px;
+  margin-top: 2px;
+
+  &-two {
+    width: 79px;
+    margin-left: 22px;
+  }
+  &-three {
+    width: 48px;
+    margin-left: 20px;
+  }
+
+  cursor: pointer;
+  &:hover + .tooltip  {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.tooltip__last-price {
+  width: 239px;
+
+  color: var(--light-system-gray, #A0A0A4);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+
+  span {
+    display: inline-block;
+    color: var(--light-system-text, #000);
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  &_discount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_discountUser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

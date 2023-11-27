@@ -1,0 +1,55 @@
+.bank-card {
+  display: flex;
+  padding: 16px 16px 24px 16px;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+
+  height: 124px;
+  margin-top: 12px;
+  margin-left: -16px;
+  margin-right: -16px;
+  width: calc(100% + 32px);
+
+  border-radius: 16px;
+  background: var(--background-white, #FFF);  
+
+  @media#{$screen-tablet} {
+    height: 136px;
+
+    margin-top: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    min-width: 640px;
+    padding: 16px 24px 24px 24px;
+  }
+
+
+  &__card {
+    display: flex;
+
+    color: var(--text-black, #000);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    
+    &-num {
+      margin-left: 8px;
+      margin-right: 12px;
+    }
+
+    @media#{$screen-tablet} {
+      margin-top: 8px;
+    }
+  }
+
+  &__descr {
+    color: var(--system-gray, #9797AF);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,76 @@
+.sold-out {
+  margin-top: 48px;
+
+  @media#{$screen-tablet} {
+    margin-top: 33px;
+  }
+
+  &__row-top {
+    margin-top: 0;
+  }
+
+  &__title {
+    color: var(--text-black, #000);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &__cards {
+    margin-top: 0;
+    @media#{$screen-tablet} {
+      margin-top: 6px;
+    }
+  }
+
+  &__card {
+    padding-top: 0px;
+    @media#{$screen-tablet} {
+      padding-top: 15px;
+    }
+    &:not(:first-child) {
+      @media#{$screen-tablet} {
+        margin-top: 17px;
+      }
+    }
+
+    &__descr-name {
+      color: var(--system-gray, #9797AF);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      max-width: 500px;
+
+      @media#{$screen-tablet} {
+        font-size: 16px;
+        line-height: 24px;
+        width: 300px;
+      }
+    }
+
+    &__descr-color {
+      color: var(--system-gray, #9797AF);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &__counter {
+      visibility: hidden
+    }
+
+    &__quantity {
+      visibility: hidden
+    }
+
+    &__icons {
+      top: 0px;
+      @media#{$screen-tablet} {
+        margin-left: -80px;
+      }
+    }
+  }
+}
+
