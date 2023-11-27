@@ -10,5 +10,5 @@ npx webpack
 ```
 
 ### Стек
-```Webpack```, ```JavaScript```, ```SCSS```, ```HTML```
+```Webpack```  ```JavaScript```  ```SCSS```  ```HTML```
 
